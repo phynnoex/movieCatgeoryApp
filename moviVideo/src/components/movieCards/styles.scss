@@ -1,0 +1,53 @@
+.movieCard{
+    height: 50vh;
+    width: calc(30% - 80px);
+    background-color: yellow;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    .viewDetails{
+        margin: auto;
+        background-color: rgba(14, 21, 31, 0.5);
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    .movieCardDescription{
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        padding: 20px 20px;
+        .movieCardDescriptionText{
+            h3{
+                font-size: 20px;
+                line-height: 100%;
+                padding: 0;
+                margin: 0;
+                font-style: italic;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+            p{
+                line-height: 100%;
+                padding: 0;
+                margin: 0;
+                font-style: italic;
+            }
+        }
+        .movieCardDescriptionRating{
+            display: flex;
+            gap: 3px;
+            align-items: center;
+            margin-right: 10px;
+            .star{
+                color: #F39C12;
+                font-size: 25px;
+            }
+            .score{
+                font-style: italic;
+            }
+        }
+        
+    }
+}

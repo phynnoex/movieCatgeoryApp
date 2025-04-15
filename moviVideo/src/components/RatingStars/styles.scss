@@ -1,0 +1,11 @@
+.rating{
+    color: white;
+    display: flex;
+    gap: 10px;
+    .star-filled{
+        color: white;
+    }
+    .star{
+        color: rgba(255, 255, 255,0.5);
+    }
+}

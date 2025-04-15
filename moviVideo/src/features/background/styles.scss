@@ -1,0 +1,19 @@
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+.background::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // 10% to 50% to 100%
+    background: linear-gradient(to bottom, rgba(14, 21, 31, 0.1), rgba(14, 21, 31, 0.5), rgba(14, 21, 31, 1));
+}

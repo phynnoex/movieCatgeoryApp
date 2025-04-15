@@ -1,0 +1,160 @@
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 2rem 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo & Social Icons */
+  .footer-logo {
+    text-align: left;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+    color: #F39C12;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: start;
+    
+  }
+  .social-icon{
+    color: white;
+  
+  }
+  .social-icon:hover {
+    color: #F39C12; /* Change to your desired hover color */
+  }
+  /* Contact & Subscribe */
+  .footer-contact,
+  .footer-subscribe {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .footer-contact h4,
+  .footer-subscribe h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #F39C12;
+  }
+  
+  .footer-contact p,
+  .footer-subscribe p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 99%;
+    font-weight: 300;
+  }
+  .footer-contact p a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer-contact p a:hover{
+    color: white;
+    text-decoration: none;
+    text-decoration: underline;
+  }
+  
+  
+  
+  /* Copyright */
+  .footer-bottom {
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    border-top: 1px solid white;
+    max-width: 1200px;
+    margin: 50px auto 0px auto; 
+  }
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
+  /* Remove or update the old circle styles if they exist */
+  .circle {
+    display: none; /* Hide the old circles */
+  }
+  /* Subscribe Popup Styles */
+
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-contact,
+    .footer-subscribe {
+      margin-top: 20px;
+    }
+  }
+  /* Responsive - Mobile View */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .footer-contact,
+    .footer-subscribe {
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+  
+    .footer-subscribe input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  
+    .footer-bottom {
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+  }
+  
