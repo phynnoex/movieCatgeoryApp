@@ -15,6 +15,7 @@ export default function CategoriesDisplay(props) {
       <div className="listContainer">
         {props.data ? props.data.results.map((item) => (
           <MovieCard
+            isDisableCard ={props.isDisableCard}
             key={item.id}
             title={item.title}
             image={item.poster_path}

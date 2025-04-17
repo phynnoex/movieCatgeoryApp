@@ -7,7 +7,9 @@ import useApiData from "./Config/getApiData.jsx";
 import Categories from "./pages/Categories/index.jsX";
 import API_ENDPOINTS from "./Config/getApiData.jsx/apiConfig.js";
 import { useEffect, useState } from "react";
-
+import SignUp from "./pages/Sign-up/index.jsx";
+import WatchList from "./pages/WatchList/index.jsx";
+import SignIn from "./pages/signIn/index.jsx";
 export  function WrapGenre({ genreId, genreName }) {
   const { data, loading, error } = useApiData(API_ENDPOINTS.discoverByGenre(genreId));
 
@@ -45,6 +47,13 @@ function App() {
               />
             ))}
         </Route>
+        <Route path="signUp"  element={<SignUp />} />
+        <Route path="signIn"  element={<SignIn/>} />
+        <Route path="*" element={<p>Page not found</p>} />
+        <Route path="watchList" element={<WatchList/>} />
+        
+        
+
       </Route>
     </Routes>
   );

@@ -11,14 +11,11 @@ export default function MovieCard(props) {
   useEffect(() => {
     if (showDetails) {
       document.body.style.overflow = "hidden";
-      console.log("overflow hidden")
     } else {
       document.body.style.overflow = "auto";
-      console.log("overflow scroll")
     }
-    console.log("showDetails", showDetails)
-  }
-  , [showDetails]);
+    console.log("showDetails", showDetails);
+  }, [showDetails]);
 
   return (
     <>
@@ -28,10 +25,16 @@ export default function MovieCard(props) {
         onHoverStart={() => setHovered(true)}
         onHoverEnd={() => setHovered(false)}
         style={{
-          backgroundImage: `url(${props.image ? `https://image.tmdb.org/t/p/w500${props.image}` : bgImage})`,
+          backgroundImage: `url(${
+            props.image
+              ? `https://image.tmdb.org/t/p/w500${props.image}`
+              : bgImage
+          })`,
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        onClick={() => {setShowDetails(true)}}
+        onClick={() => {
+          setShowDetails(true);
+        }}
       >
         {hovered ? (
           <motion.div
@@ -54,15 +57,24 @@ export default function MovieCard(props) {
         >
           <div className="movieCardDescriptionText">
             <h3>{props.title}</h3>
-            <p>{props.date.slice(0,4)}</p>
+            <p>{props.date.slice(0, 4)}</p>
           </div>
           <div className="movieCardDescriptionRating">
             <div className="star">★</div>
-            <div className="score">{(props.rating /10 * 5).toFixed(1)}</div>
+            <div className="score">{((props.rating / 10) * 5).toFixed(1)}</div>
           </div>
         </motion.div>
       </motion.div>
-      {showDetails ? (<ExpandedDetails setShowmodal={setShowDetails} movieId={props.id} showModal={showDetails}/>): ""}
+      {showDetails ? (
+        <ExpandedDetails
+          isDisableCard={props.isDisableCard}
+          setShowmodal={setShowDetails}
+          movieId={props.id}
+          showModal={showDetails}
+        />
+      ) : (
+        ""
+      )}
     </>
   );
 }

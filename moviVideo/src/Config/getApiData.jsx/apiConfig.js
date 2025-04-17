@@ -16,6 +16,9 @@ const API_ENDPOINTS = {
     discoverByGenre: (genreId) => {
         return `https://api.themoviedb.org/3/discover/movie?api_key=5caadb1fd8920f5739a0363d7a09ff67&with_genres=${genreId}`
     },
+    movieLists: (userId) => {
+        return `https://api.themoviedb.org/3/movie/${userId}/lists?api_key=5caadb1fd8920f5739a0363d7a09ff67`
+    }
 }
 
 export default API_ENDPOINTS;

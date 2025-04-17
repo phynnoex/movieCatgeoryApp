@@ -76,6 +76,22 @@
       scrollbar-color: #f39c12 rgba(0, 0, 0, 0.2);
       scroll-behavior: smooth;
       padding: 0px 10px;
+      .expandedDetailsDescriptionTop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .watchListButton{
+        background-color: #f39c12;
+        padding: 15px 20px;
+        border-radius: 30px;
+      }
+      .watchListButton:hover{
+        cursor: pointer;
+        background-color: #c58010;
+        color: white;
+      }
       .movieGenre{
         font-size: 20px;
         text-transform: uppercase;

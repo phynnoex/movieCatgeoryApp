@@ -8,6 +8,7 @@ import "./styles.scss";
 import API_ENDPOINTS from "../../Config/getApiData.jsx/apiConfig.js";
 import useApiData from "../../Config/getApiData.jsx";
 import Footer from "../../features/footer/index.jsx";
+import { useAuth } from "../../Config/AuthContext.jsx";
 
 
 export default function Home() {
@@ -18,12 +19,18 @@ export default function Home() {
     
     const [index,setIndex] = useState(0);
     // const rating = data.results[0].vote_average/10 * 5;
-
+    const {isSignedUP} = useAuth();
     useEffect(() => {
+
+        console.log()
         setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % 20);
         }, 50000);
+
+
     }, []);
+
+    
     return (
         <>
         { !trendingLoading ? 
@@ -36,9 +43,9 @@ export default function Home() {
                 <RatingStars rating={trendingData.results[index].vote_average} />
                 <div className="genre">Thriller</div>
             </div>
-            <CategoriesDisplay CategoryTitle = "trending movies" data={trendingData}/>
-            <CategoriesDisplay CategoryTitle = "popular movies" data={popularData}/>
-            <CategoriesDisplay CategoryTitle = "top-rated movies" data={topRatedData}/>
+            <CategoriesDisplay CategoryTitle = "trending movies" isDisableCard={true}  data={trendingData}/>
+            <CategoriesDisplay CategoryTitle = "popular movies" isDisableCard={true} data={popularData}/>
+            <CategoriesDisplay CategoryTitle = "top-rated movies" isDisableCard={true} data={topRatedData}/>
             </div>
             <Footer/>
         </div> : <p>Loading...</p>

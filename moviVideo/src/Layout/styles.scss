@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: start;
   padding: 30px 100px;
   gap: 30vw;
   color: white;
@@ -19,8 +18,13 @@
     display: flex;
     list-style-type: none;
     width: 100%;
-    gap: 10vw;
+    gap: 9vw;
     font-weight: 300;
+    .signOutButton{
+      background-color: #F39C12;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
     a {
       text-decoration: none;
       color: white;
