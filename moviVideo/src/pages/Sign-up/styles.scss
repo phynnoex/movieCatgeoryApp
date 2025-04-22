@@ -59,3 +59,35 @@
     
     
 }
+
+// mobile responsive
+@media (max-width: 768px) {
+    .signUp{
+        margin : 30px 20px;
+        
+        .signUpImage{
+            display: none;
+        }
+        .signUpForm{
+            width: 100%;
+            padding: 50px 10px;
+
+            p{
+                width: 80%;
+                text-align: center;
+            }
+            h1{
+                font-size: 20px;
+            }
+            form {
+                width: 80%;
+                input {
+                    font-size: 15px;
+                }
+                button{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

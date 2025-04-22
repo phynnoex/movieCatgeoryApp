@@ -1,6 +1,11 @@
 .categoriesPage{
     font-family: inter;
-    padding: 20px 100px;
-    
-    
+    padding: 20px 100px; 
+}
+
+//mobile view
+@media (max-width: 768px) {
+    .categoriesPage{
+        padding: 20px 20px; 
+    }
 }

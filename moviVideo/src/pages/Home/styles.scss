@@ -1,6 +1,6 @@
 .home {
-    padding: 0;
-    
+  padding: 0;
+
   .homeContainer {
     padding: 0px 100px;
     font-family: inter;
@@ -33,6 +33,22 @@
         margin-top: 10px;
         border: 2px solid rgba(255, 255, 255, 0.5);
         border-radius: 30px;
+      }
+    }
+  }
+}
+
+// mobile responsive
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 0px 20px !important;
+    .HeroDetail {
+      height: 40vh;
+      .HeroMovieTitle {
+        font-size: 30px;
+      }
+      p {
+        font-size: 12px;
       }
     }
   }

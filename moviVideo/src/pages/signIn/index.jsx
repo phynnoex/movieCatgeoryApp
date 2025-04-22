@@ -49,7 +49,7 @@ export default function SignIn() {
           })`,
         }}
       ></div>
-      <div className="singInForm">
+      <div className="signInForm">
         <h1>Sign In</h1>
         <form onSubmit={handleSubmit}>
           <input

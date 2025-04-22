@@ -16,3 +16,18 @@
         flex-wrap: wrap;
     }
 }
+
+// mobile view
+@media (max-width: 768px) {
+    .TrendingMovies{
+        margin-bottom: 20px;
+        h1{
+            font-size: 25px;
+            margin: 10px 0px;
+        }
+        .listContainer{
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}

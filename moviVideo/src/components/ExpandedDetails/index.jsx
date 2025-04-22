@@ -58,7 +58,7 @@ export default function ExpandedDetails({ setShowmodal, showModal, movieId, isDi
                 </div>
                 </div>
                 <div className="expandedDetailsDescriptionTopRight">
-                  {isDisableCard && <div className="watchListButton" onClick={()=>{handleClick(data.id)}}>+ watchList</div>}
+                  {isDisableCard && <div className="watchListButton" onClick={()=>{handleClick(data.id)}}>watchList</div>}
                 </div>
               </div>
               <hr />

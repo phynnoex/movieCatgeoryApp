@@ -55,7 +55,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <p>
-          © 2025 <span>FanSurvey</span>. All rights reserved.
+          © 2025 <span>MovieCatgorizer</span>. All rights reserved.
         </p>
       </div>
     </footer>

@@ -51,3 +51,31 @@
         
     }
 }
+
+// mobile view
+@media (max-width: 768px) {
+    .movieCard{
+        height: 40vh;
+        width: calc(100% );
+        margin: 20px 0px;
+        .movieCardDescription{
+            padding: 10px 10px;
+            .movieCardDescriptionText{
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            .movieCardDescriptionRating{
+                .star{
+                    font-size: 20px;
+                }
+                .score{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

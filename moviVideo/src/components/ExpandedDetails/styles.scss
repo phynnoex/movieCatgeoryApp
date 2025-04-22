@@ -113,3 +113,23 @@
     }
   }
 }
+
+// mobile view
+
+@media (max-width: 768px) {
+  .expandedDetails {
+    flex-direction: column;
+    height: 70% !important;
+    .expandedDetailsImg {
+      width: 100% !important;
+      height: 50vh;
+    }
+    .expandedDetailsDescription {
+      width: 100% !important;
+      .movieTitle{
+      }
+      .movieGenre{
+      }
+    }
+  }
+}

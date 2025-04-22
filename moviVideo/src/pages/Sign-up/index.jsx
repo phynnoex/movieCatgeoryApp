@@ -81,7 +81,7 @@ export default function SignUp() {
           
           {error && <p className="error">{error}</p>}
         </form>
-        <div><p>already have an account <span onClick={handleSignIn} style={{color: "#ffcc00", cursor: "pointer"}}>signIn</span></p></div>
+        <div ><p>already have an account <span onClick={handleSignIn} style={{color: "#ffcc00", cursor: "pointer"}}>signIn</span></p></div>
       </div>
     </div>
   );

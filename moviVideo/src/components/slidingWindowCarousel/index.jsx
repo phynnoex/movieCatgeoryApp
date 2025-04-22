@@ -7,10 +7,13 @@ import {
   FaCross,
 } from "react-icons/fa";
 import "./styles.scss";
+import { useMediaQuery } from 'react-responsive';
 
 const SlidingWindowCarousel = ({ items }) => {
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 });
+
   const [startIndex, setStartIndex] = useState(0);
-  const windowSize = 4;
+  const windowSize = isDesktopOrLaptop ? 4 : 3;
 
   const canGoLeft = startIndex > 0;
   const canGoRight = startIndex + windowSize < items.length;

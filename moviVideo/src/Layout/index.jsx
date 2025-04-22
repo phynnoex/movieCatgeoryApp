@@ -3,28 +3,24 @@ import "./styles.scss";
 import { useAuth } from "../Config/AuthContext";
 import { signOut } from "../services/Authentication/signOut";
 
-
-
-
 export default function Layout() {
-  const { isSignedUP} = useAuth();
-    const navigate = useNavigate();
+  const { isSignedUP } = useAuth();
+  const navigate = useNavigate();
 
   const handleSignOut = () => {
     signOut()
       .then(() => {
         console.log("User signed out successfully");
-         // Update the signed-up state to false
-         navigate("/"); // Redirect to sign-in page after sign-out
-
+        // Update the signed-up state to false
+        navigate("/"); // Redirect to sign-in page after sign-out
       })
       .catch((error) => {
         console.error("Error signing out:", error);
       });
-  }
+  };
 
   console.log("IsSignedUP:", isSignedUP);
-  
+
   return (
     <>
       <div className="layout">
@@ -43,13 +39,17 @@ export default function Layout() {
               <Link to="/signUp">SignUp</Link>
             </li>
           )}
-            {!isSignedUP && (
-                <li>
-                <Link to="/signIn">SignIn</Link>
-                </li>
-            )}
-          {isSignedUP &&  <Link to="/watchList">WatchList</Link>}
-          {isSignedUP &&  <div className="signOutButton" onClick={handleSignOut}>signOut</div>}
+          {!isSignedUP && (
+            <li>
+              <Link to="/signIn">SignIn</Link>
+            </li>
+          )}
+          {isSignedUP && <Link to="/watchList">WatchList</Link>}
+          {isSignedUP && (
+            <div className="signOutButton" onClick={handleSignOut}>
+              signOut
+            </div>
+          )}
         </nav>
       </div>
       <Outlet />

@@ -15,3 +15,15 @@
         font-weight: 700;
     }
 }
+
+// mobile view 
+@media (max-width: 768px) {
+    .categoriesCard{
+        width: 150px;
+        height: 100px;
+        margin: 10px 0px;
+        p{
+            font-size: 18px;
+        }
+    }
+}

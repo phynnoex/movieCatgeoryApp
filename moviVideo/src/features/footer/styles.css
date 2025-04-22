@@ -116,7 +116,8 @@
   @media (max-width: 768px) {
     .footer-container {
       flex-direction: column;
-      text-align: center;
+      text-align: left;
+      align-items: start;
     }
   
     .footer-contact,
@@ -136,7 +137,7 @@
     }
   
     .social-icons {
-      justify-content: center;
+      justify-content: left;
     }
   
     .footer-contact,
