@@ -17,7 +17,7 @@ export default function GenreList() {
   return (
     <div className="genreList">
       {!loading ? data.genres.map((genre, index) => (
-        <Link key={index} to={`/categories/${genre.id}`} onClick={() => setGenreId(genre.id)}>
+        <Link key={index} to={`/categories/${genre.id}`} >
           <CategoriesCard CategoryName={genre.name} />
         </Link>
       )): <p>Loading...</p>}
