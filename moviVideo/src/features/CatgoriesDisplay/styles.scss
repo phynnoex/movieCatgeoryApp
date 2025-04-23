@@ -12,8 +12,8 @@
     }
     .listContainer{
         display: flex;
-        gap: 10px;
         flex-wrap: wrap;
+        column-gap: 20px;
     }
 }
 
@@ -31,3 +31,5 @@
         }
     }
 }
+
+// tablet view

@@ -1,6 +1,6 @@
 .movieCard{
     height: 50vh;
-    width: calc(30% - 80px);
+    width: calc(25% - 20px);
     background-color: yellow;
     background-size: cover;
     display: flex;
@@ -79,3 +79,24 @@
         }
     }
 }
+
+// tablet view
+@media (max-width: 1023px) and (min-width: 769px) {
+    .movieCard{
+        height: 30vh;
+        width: calc(50% - 20px);
+        margin: 20px 0px;
+       
+    }
+}
+
+// tablet view
+@media (max-width: 1280px) and (min-width: 1024px) {
+    .movieCard{
+        height: 30vh;
+        width: calc(33.3% - 20px);
+        margin: 20px 0px;
+    }
+}
+
+// desktop view

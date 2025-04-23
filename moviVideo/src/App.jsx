@@ -26,7 +26,6 @@ export  function WrapGenre({ genreId, genreName }) {
 }
 
 function App() {
-  const [genreId, setGenreId] = useState(null);
   const { data, loading, error } = useApiData(API_ENDPOINTS.genres);
 
 
